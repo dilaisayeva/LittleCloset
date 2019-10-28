@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container " style="width: 50%  ">
+    <form action="" method="post">
+        {{form|crispy}}
+        <input type="submit" class="form-control btn btn-primary" style="color: white; background-color: #2fce98"
+            value="Qeydiyyatdan keç" />
+        <br>
+        <!-- <a href="http://">Login</a> -->
+        {% csrf_token %}
+    </form>
+</div>
+
+<br>
+<br>
+{% endblock content %}
